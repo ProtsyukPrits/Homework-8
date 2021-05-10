@@ -1,0 +1,79 @@
+.form-information {
+  display: block;
+  position: relative;
+}
+
+.form-information--margin {
+  margin-bottom: 10px;
+}
+
+.form-information__label {
+  text-align: center;
+
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: $letter-spacing-0_01em;
+
+  color: $grey-dark;
+}
+
+.form-information__input {
+  width: 100%;
+
+  border: 1px solid $black-medium-transparent;
+  border-radius: 4px;
+  padding: 0;
+}
+
+.form-information__input:focus {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  border-color: $blue-light;
+}
+
+.form-information__input--paddings {
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 40px;
+}
+
+.form-information__input--resize {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+}
+
+.form-information__input--height {
+  height: 138px;
+}
+
+.form-information__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+
+.form-information__icon {
+  fill: currentColor;
+}
+
+.form-information__input:focus + .form-information__icon {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: $white-full;
+  color: $blue-light;
+}
+
+.form-information__input::placeholder {
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: $letter-spacing-0_01em;
+
+  color: $grey-dark-transparent;
+}

@@ -1,0 +1,16 @@
+.our-work-photos {
+  @include direction();
+}
+
+.our-work-photos--size {
+  @include margined();
+}
+
+.our-work-photos .our-work-photos__list:not(:last-child) {
+  margin-right: 30px;
+}
+.our-work-photos__list {
+  position: relative;
+  width: 370px;
+  height: 294px;
+}

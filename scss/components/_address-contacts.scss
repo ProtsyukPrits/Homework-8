@@ -1,0 +1,33 @@
+.address-contacts {
+  display: block;
+  list-style: none;
+  align-items: flex-start;
+}
+.address-contacts--margins {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20px;
+}
+.address-contacts .address-contacts__list:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-contacts__list--font-address {
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: $letter-spacing-0_03em;
+  color: $white-full;
+  text-decoration: none;
+}
+.address-contacts__list--font-contact {
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: $letter-spacing-0_03em;
+  color: $white-full-transparent-medium;
+  text-decoration: none;
+}

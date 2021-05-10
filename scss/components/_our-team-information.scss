@@ -1,0 +1,32 @@
+.our-team-information--shadow {
+  text-align: center;
+  width: 270px;
+  height: 428px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px $transparent-black-012,
+    0px 1px 1px $transparent-black-014, 0px 2px 1px $transparent-black-020;
+  border-radius: 0px 0px 4px 4px;
+}
+.our-team-information__title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-medium;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: $letter-spacing-0_03em;
+  color: $black-medium;
+}
+.our-team-information__text {
+  margin: 0px;
+
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: $letter-spacing-0_03em;
+  color: $grey-dark;
+}

@@ -1,0 +1,9 @@
+.our-team {
+  @include direction();
+}
+.our-team--margins {
+  @include margined();
+}
+.our-team .our-team-information--shadow:not(:last-child) {
+  margin-right: 30px;
+}

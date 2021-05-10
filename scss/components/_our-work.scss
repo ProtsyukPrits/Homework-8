@@ -1,0 +1,16 @@
+.our-work {
+  flex-direction: column;
+}
+.our-work__title {
+  text-align: center;
+  margin: 0px;
+  @include bottom-line();
+
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: $letter-spacing-0_03em;
+  color: $black-medium;
+}

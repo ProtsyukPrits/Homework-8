@@ -1,0 +1,27 @@
+.logo {
+  text-decoration: none;
+}
+.logo__item--black {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: $black-dark;
+}
+.logo__item--blue {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: $blue-light;
+}
+.logo__item--white {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: $white-full;
+}

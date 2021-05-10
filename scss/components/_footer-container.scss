@@ -1,0 +1,11 @@
+.footer-container {
+  justify-content: flex-start;
+}
+.footer-container--size {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 1600px;
+  margin: auto;
+  color: $white-full;
+  background-color: $black-light;
+}

@@ -1,0 +1,21 @@
+.our-work-information {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  background: $black-light-transparent;
+}
+.our-work-information__text {
+  margin: 27px 0px 27px 0px;
+  color: $white-full;
+
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: $letter-spacing-0_03em;
+  text-transform: uppercase;
+}

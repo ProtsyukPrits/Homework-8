@@ -1,0 +1,48 @@
+// Порядок файлів у scss===>>>
+// Utils
+// Base
+// Components
+// layout
+// Pages
+// Themes
+// Vendors
+
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "base/normalize";
+
+@import "components/logo";
+@import "components/contacts";
+@import "components/head";
+@import "components/benefits";
+@import "components/our-work";
+@import "components/our-work-photos";
+@import "components/our-work-information";
+@import "components/our-team-container";
+@import "components/our-team";
+@import "components/our-team-information";
+@import "components/our-team-social-information";
+@import "components/regular-customers-container";
+@import "components/regular-customers";
+@import "components/footer-container";
+@import "components/address-contacts";
+@import "components/join";
+@import "components/join-information";
+@import "components/subscribe";
+@import "components/subscribe-area";
+@import "components/modal";
+@import "components/backdrop";
+@import "components/form";
+@import "components/form-information";
+@import "components/check-box";
+@import "components/portfolio-navigation";
+@import "components/portfolio-anchor";
+@import "components/portfolio-card";
+@import "components/portfolio-photo";
+@import "components/portfolio-information";
+
+@import "layout/navigation";
+@import "layout/page-header";
+@import "layout/container";
+@import "layout/section";

@@ -1,0 +1,76 @@
+// ----------------------------Colors---------------------------
+$white-full: #ffffff;
+$white-full-transparent-medium: rgba(255, 255, 255, 0.6);
+$white-full-transparent-light: rgba(255, 255, 255, 0.302);
+$white-full-transparent-extra-light: rgba(255, 255, 255, 0.12);
+
+$black-dark: #000000;
+$black-medium: #212121;
+$black-medium-transparent: rgba(33, 33, 33, 0.2);
+$black-light: #2f303a;
+$black-light-transparent: rgba(47, 48, 58, 0.8);
+
+$blue-dark: #188ce8;
+$blue-light: #2196f3;
+$blue-light-transparent: rgba(33, 150, 243, 0.902);
+
+$grey-dark: #757575;
+$grey-dark-transparent: rgba(117, 117, 117, 0.502);
+$grey-medium: #afb1b8;
+$grey-light: #f5f4fa;
+
+$transparent-black-006: rgba(0, 0, 0, 0.059);
+
+$transparent-black-010: rgba(0, 0, 0, 0.102);
+$transparent-black-012: rgba(0, 0, 0, 0.122);
+$transparent-black-014: rgba(0, 0, 0, 0.141);
+$transparent-black-015: rgba(0, 0, 0, 0.149);
+$transparent-black-016: rgba(0, 0, 0, 0.161);
+
+$transparent-black-020: rgba(0, 0, 0, 0.2);
+$transparent-black-025: rgba(0, 0, 0, 0.251);
+
+// ------------------------font-family----------------------------------
+$font-family-raleway: "Raleway", "san-serif";
+$font-family-roboto: "Roboto", "san-serif";
+
+// ------------------------font-weight----------------------------------
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-ultra-bold: 900;
+
+// ------------------------letter-spacing---------------------------------
+$letter-spacing-0_03em: 0.03em;
+$letter-spacing-0_02em: 0.02em;
+$letter-spacing-0_06em: 0.06em;
+$letter-spacing-0_01em: 0.01em;
+
+// ------------------------width----------------------------------
+
+// ------------------------height----------------------------------
+
+// ------------------------shadow----------------------------------
+$filter-transparent-black-025: drop-shadow(0px 4px 4px transparent-black-025);
+$footer-filter-transparent-black-015: drop-shadow(
+  0px 4px 4px transparent-black-015
+);
+
+$our-box-shadow-transparent-black-012: 0px 1px 3px $transparent-black-012;
+$portfolio-box-shadow-transparent-black-012: 0px 1px 1px $transparent-black-012;
+
+$box-shadow-transparent-black-015: 0px 4px 4px $transparent-black-015;
+$box-shadow-transparent-black-014: 0px 1px 1px $transparent-black-014;
+$box-shadow-transparent-black-020: 0px 2px 1px $transparent-black-020;
+$box-shadow-transparent-black-006: 0px 4px 4px $transparent-black-006;
+$box-shadow-transparent-black-016: 1px 4px 6px $transparent-black-016;
+$box-shadow-transparent-black-015: 0px 4px 4px $transparent-black-015;
+$box-shadow-transparent-black-015: 0px 4px 4px $transparent-black-015;
+$box-shadow-transparent-black-015: 0px 4px 4px $transparent-black-015;
+$box-shadow-transparent-black-015: 0px 4px 4px $transparent-black-015;
+
+// ------------------------border--------------------------------
+$border-black: 1px solid $black-dark;
+$border-transparent-black-010: 1px solid $transparent-black-010;
+$border-black-medium-transparent: 1px solid $black-medium-transparent;
+$border-black-medium: 2px solid $black-medium;

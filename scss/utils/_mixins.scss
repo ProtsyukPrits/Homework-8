@@ -1,0 +1,13 @@
+@mixin direction() {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@mixin margined() {
+  margin: 0;
+  padding: 0;
+}
+@mixin bottom-line() {
+  margin-bottom: 50px;
+}

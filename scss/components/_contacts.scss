@@ -1,0 +1,39 @@
+.contacts {
+  @include direction();
+}
+.contacts--size {
+  @include margined();
+  margin-left: auto;
+}
+
+.contacts .contacts__list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts__list--font {
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-medium;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: $letter-spacing-0_02em;
+  color: $grey-dark;
+
+  text-decoration: none;
+}
+
+.contacts__list--font:hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2196f3;
+  background-color: white;
+}
+
+.contacts__list--padding {
+  padding: 32px 25px;
+  display: flex;
+  align-items: center;
+}
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
