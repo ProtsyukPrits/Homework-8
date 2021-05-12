@@ -1,13 +1,5 @@
 .contacts {
-  @include direction();
-}
-.contacts--size {
-  @include margined();
-  margin-left: auto;
-}
-
-.contacts .contacts__list:not(:last-child) {
-  margin-right: 30px;
+  list-style: none;
 }
 
 .contacts__list--font {
@@ -21,19 +13,46 @@
 
   text-decoration: none;
 }
-
+.contacts__icon {
+  display: none;
+}
 .contacts__list--font:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196f3;
   background-color: white;
 }
 
-.contacts__list--padding {
-  padding: 32px 25px;
-  display: flex;
-  align-items: center;
+@media (min-width: 768px) {
+  .contacts {
+    @include direction();
+  }
+  .contacts--size {
+    @include margined();
+    margin-left: auto;
+  }
+  .contacts--size {
+    @include margined();
+    margin-left: auto;
+  }
+  .contacts__list--padding {
+    display: flex;
+  }
+  .contacts__icon {
+    fill: currentColor;
+    margin-right: 8px;
+  }
 }
-.contacts__icon {
-  margin-right: 10px;
-  fill: currentColor;
+
+@media (min-width: 1200px) {
+  .contacts .contacts__list:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .contacts__list--padding {
+    padding: 32px 25px;
+    align-items: center;
+  }
+  .contacts__icon {
+    margin-right: 10px;
+  }
 }

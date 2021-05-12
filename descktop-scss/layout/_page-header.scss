@@ -9,9 +9,28 @@
   border-bottom: 1px solid #ececec;
 }
 .page-header--container {
-  display: flex;
-  justify-content: space-between;
   padding: 0px 15px;
-  max-width: 1200px;
-  margin: auto;
+}
+
+.page-header--container {
+  @media (min-width: 1200px), (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    max-width: 768px;
+  }
+
+  @media (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    max-width: 480px;
+  }
 }

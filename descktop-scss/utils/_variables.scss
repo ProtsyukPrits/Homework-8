@@ -74,3 +74,15 @@ $border-black: 1px solid $black-dark;
 $border-transparent-black-010: 1px solid $transparent-black-010;
 $border-black-medium-transparent: 1px solid $black-medium-transparent;
 $border-black-medium: 2px solid $black-medium;
+
+// ------------------------@media--------------------------------
+$mobile-pt: "screen and (max-width: 479px)"; //portrait
+$mobile-lp: "screen and (min-width: 480px) and (max-width: 767px)"; //landscape
+
+$tablet-pt: "screen and (min-width: 768px)"; //portrait
+$tablet-lp: "screen and (min-width: 768px) and (max-width: 1199px)"; //landscape
+
+$desktop-pt: screen and
+  (
+    min-width: 1200px,
+  ); //portrait

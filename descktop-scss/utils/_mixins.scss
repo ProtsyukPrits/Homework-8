@@ -1,5 +1,4 @@
 @mixin direction() {
-  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -11,3 +10,11 @@
 @mixin bottom-line() {
   margin-bottom: 50px;
 }
+
+// @media (max-width: 479px)
+// @media (min-width:480px) and (max-width:767px)
+
+// @media (min-width: 768px)
+// @media (min-width:768px) and (max-width:1199px)
+
+// @media (min-width: 1200px)
