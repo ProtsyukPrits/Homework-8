@@ -1,5 +1,16 @@
 .contacts {
   list-style: none;
+
+  @media #{$tablet-pt} {
+    @include direction();
+  }
+}
+
+.contacts--size {
+  @media #{$tablet-pt} {
+    @include margined();
+    margin-left: auto;
+  }
 }
 
 .contacts__list--font {
@@ -13,46 +24,44 @@
 
   text-decoration: none;
 }
-.contacts__icon {
-  display: none;
-}
+
 .contacts__list--font:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196f3;
   background-color: white;
 }
 
-@media (min-width: 768px) {
-  .contacts {
-    @include direction();
-  }
-  .contacts--size {
-    @include margined();
-    margin-left: auto;
-  }
-  .contacts--size {
-    @include margined();
-    margin-left: auto;
-  }
-  .contacts__list--padding {
+.contacts__list--padding {
+  @media #{$tablet-pt} {
     display: flex;
   }
-  .contacts__icon {
-    fill: currentColor;
-    margin-right: 8px;
-  }
-}
 
-@media (min-width: 1200px) {
-  .contacts .contacts__list:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  .contacts__list--padding {
+  @media #{$desktop-pt} {
     padding: 32px 25px;
     align-items: center;
   }
-  .contacts__icon {
+}
+
+.contacts__icon {
+  @media #{$tablet-max} {
+    display: none;
+  }
+
+  @media #{$tablet-pt} {
+    fill: currentColor;
+  }
+
+  @media #{$tablet-lp} {
+    margin-right: 8px;
+  }
+
+  @media #{$desktop-pt} {
     margin-right: 10px;
+  }
+}
+
+.contacts .contacts__list:not(:last-child) {
+  @media #{$desktop-pt} {
+    margin-right: 30px;
   }
 }

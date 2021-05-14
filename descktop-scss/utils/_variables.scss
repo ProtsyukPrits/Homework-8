@@ -79,10 +79,19 @@ $border-black-medium: 2px solid $black-medium;
 $mobile-pt: "screen and (max-width: 479px)"; //portrait
 $mobile-lp: "screen and (min-width: 480px) and (max-width: 767px)"; //landscape
 
+$tablet-max: "screen and (max-width: 767px)"; //portrait-max
 $tablet-pt: "screen and (min-width: 768px)"; //portrait
 $tablet-lp: "screen and (min-width: 768px) and (max-width: 1199px)"; //landscape
 
-$desktop-pt: screen and
-  (
-    min-width: 1200px,
-  ); //portrait
+$desktop-max: "screen and (max-width: 1199px)"; //portrait-max
+$desktop-pt: "screen and (min-width: 1200px)"; //portrait
+
+// #{$mobile-pt} 479px
+// #{$mobile-lp} 480-767px
+
+// #{$tablet-max} 767px
+// #{$tablet-pt} 768px
+// #{$tablet-lp} 768-1199px
+
+// #{$desktop-max} 1199px
+// #{$desktop-pt} 1200px

@@ -1,5 +1,9 @@
 .navigation {
   list-style: none;
+
+  @media #{$tablet-pt} {
+    @include direction();
+  }
 }
 
 .navigation__list {
@@ -22,23 +26,32 @@
   background-color: white;
 }
 
-@media (min-width: 768px) {
-  .navigation--size {
+.navigation--size {
+  @media #{$tablet-pt} {
     @include margined();
   }
 
-  .navigation {
-    @include direction();
+  @media #{$desktop-pt} {
+    width: 294px;
+    height: 80px;
+    margin-left: 93px;
   }
+}
 
-  .navigation__list--position {
+.navigation__list--position {
+  position: relative;
+
+  padding-left: 0;
+  padding-right: 0;
+
+  @media #{$desktop-pt} {
     display: block;
-    position: relative;
     padding: 32px 25px;
-    padding-left: 0;
-    padding-right: 0;
   }
-  .navigation__list--underscore::after {
+}
+
+.navigation__list--underscore::after {
+  @media #{$tablet-pt} {
     position: absolute;
     content: "";
     display: block;
@@ -48,12 +61,5 @@
     height: 4px;
     background: #2196f3;
     border-radius: 2px;
-  }
-}
-@media (min-width: 1200px) {
-  .navigation--size {
-    width: 294px;
-    height: 80px;
-    margin-left: 93px;
   }
 }

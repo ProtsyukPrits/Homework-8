@@ -1,16 +1,43 @@
 .our-work-photos {
-  @include direction();
+  @media #{$desktop-max} {
+    display: none;
+  }
+
+  @media #{$desktop-pt} {
+    @include direction();
+  }
 }
 
 .our-work-photos--size {
-  @include margined();
+  @media #{$desktop-max} {
+    display: none;
+  }
+
+  @media #{$desktop-pt} {
+    @include margined();
+  }
 }
 
 .our-work-photos .our-work-photos__list:not(:last-child) {
-  margin-right: 30px;
+  @media #{$desktop-max} {
+    display: none;
+  }
+
+  @media #{$desktop-pt} {
+    margin-right: 30px;
+  }
 }
+
 .our-work-photos__list {
-  position: relative;
-  width: 370px;
-  height: 294px;
+  list-style: none;
+
+  @media #{$desktop-max} {
+    display: none;
+  }
+
+  @media #{$desktop-pt} {
+    position: relative;
+    width: 370px;
+    height: 294px;
+  }
 }
