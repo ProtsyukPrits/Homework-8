@@ -2,28 +2,43 @@
   @include direction();
 }
 .regular-customers--size {
+  display: inline-block;
+
   @include margined();
 }
 .regular-customers__link {
-  display: flex;
+  display: inline-flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: none;
-  width: 170px;
-  height: 90px;
   padding: 0px;
+  margin: 0px;
+
+  border: none;
+  width: 210px;
+  height: 92px;
 
   color: $grey-medium;
   background-color: $white-full;
   border: 1px solid $grey-medium;
   border-radius: 4px;
 }
+
+.regular-customers .regular-customers__link:nth-child(2n + 1) {
+  margin-right: 25px;
+}
+
+.regular-customers .regular-customers__link:nth-child(n + 3) {
+  margin-top: 30px;
+}
+
 .regular-customers__link:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: $blue-light;
   border-color: $blue-light;
 }
+
 .regular-customers__icon {
   fill: currentColor;
 }

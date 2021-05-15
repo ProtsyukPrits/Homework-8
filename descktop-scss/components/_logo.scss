@@ -1,6 +1,14 @@
 .logo {
   text-decoration: none;
 }
+
+.logo--footer {
+  @media #{$tablet-max} {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .logo__item--black {
   font-family: $font-family-raleway;
   font-style: normal;

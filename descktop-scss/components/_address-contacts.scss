@@ -1,15 +1,24 @@
 .address-contacts {
-  display: block;
   list-style: none;
-  align-items: flex-start;
+  @include centered;
+
+  @media #{$desktop-pt} {
+    display: block;
+    align-items: flex-start;
+  }
 }
+
 .address-contacts--margins {
   padding: 0px;
   margin: 0px;
   margin-top: 20px;
 }
 .address-contacts .address-contacts__list:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media #{$desktop-pt} {
+    margin-bottom: 9px;
+  }
 }
 .address-contacts__list--font-address {
   font-family: $font-family-roboto;

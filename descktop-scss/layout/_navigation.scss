@@ -1,9 +1,6 @@
 .navigation {
   list-style: none;
-
-  @media #{$tablet-pt} {
-    @include direction();
-  }
+  @include direction();
 }
 
 .navigation__list {
@@ -27,9 +24,7 @@
 }
 
 .navigation--size {
-  @media #{$tablet-pt} {
-    @include margined();
-  }
+  @include margined();
 
   @media #{$desktop-pt} {
     width: 294px;

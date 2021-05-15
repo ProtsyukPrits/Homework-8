@@ -1,9 +1,6 @@
 .benefits {
   list-style: none;
-
-  @media #{$tablet-pt} {
-    @include direction();
-  }
+  @include direction();
 }
 
 .benefits--container {

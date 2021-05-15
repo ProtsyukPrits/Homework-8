@@ -1,12 +1,15 @@
 .join {
   list-style: none;
+  @include centered;
 }
 .join--margins {
-  margin-left: 70px;
+  @media #{$desktop-pt} {
+    margin-left: 70px;
+  }
 }
+
 .join__title {
   margin: 0px;
-  padding-top: 12px;
 
   font-family: $font-family-roboto;
   font-style: normal;
@@ -15,4 +18,11 @@
   line-height: 16px;
   letter-spacing: $letter-spacing-0_03em;
   text-transform: uppercase;
+
+  @media #{$desktop-pt} {
+    padding-top: 12px;
+  }
+  @media #{$tablet-lp} {
+    padding-top: 5px;
+  }
 }

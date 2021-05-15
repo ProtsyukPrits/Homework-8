@@ -1,4 +1,7 @@
 .portfolio-anchor {
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
   @include direction();
 }
 
@@ -10,6 +13,13 @@
 .portfolio-anchor .portfolio-anchor__list:not(:last-child) {
   margin-right: 8px;
 }
+
+.portfolio-anchor .portfolio-anchor__list:nth-child(-n + 3) {
+  @media #{$tablet-max} {
+    margin-bottom: 15px;
+  }
+}
+
 .portfolio-anchor__button {
   padding: 6px 22px;
   border: none;

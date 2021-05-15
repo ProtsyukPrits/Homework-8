@@ -1,16 +1,10 @@
 .contacts {
   list-style: none;
-
-  @media #{$tablet-pt} {
-    @include direction();
-  }
+  @include direction();
 }
 
 .contacts--size {
-  @media #{$tablet-pt} {
-    @include margined();
-    margin-left: auto;
-  }
+  @include margined();
 }
 
 .contacts__list--font {

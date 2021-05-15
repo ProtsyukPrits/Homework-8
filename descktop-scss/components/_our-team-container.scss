@@ -1,7 +1,19 @@
 .our-team-container {
   background-color: $grey-light;
-  flex-direction: column;
+
+  @media #{$tablet-max} {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    max-width: 480px;
+  }
+
+  @media #{$tablet-pt} {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    flex-direction: column;
+  }
 }
+
 .our-team-container__title {
   text-align: center;
   margin: 0px;

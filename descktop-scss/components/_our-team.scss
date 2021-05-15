@@ -1,9 +1,30 @@
 .our-team {
   @include direction();
 }
+
 .our-team--margins {
   @include margined();
 }
+
 .our-team .our-team-information--shadow:not(:last-child) {
-  margin-right: 30px;
+  @media #{$desktop-pt} {
+    margin-right: 30px;
+  }
+}
+
+.our-team .our-team-information--shadow:not(:first-child) {
+  @media #{$tablet-max} {
+    margin-top: 30px;
+  }
+}
+
+.our-team .our-team-information--shadow:nth-child(2n) {
+  @media #{$tablet-lp} {
+    margin-left: 30px;
+  }
+}
+.our-team .our-team-information--shadow:nth-child(n + 3) {
+  @media #{$tablet-lp} {
+    margin-top: 30px;
+  }
 }

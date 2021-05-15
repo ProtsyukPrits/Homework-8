@@ -1,11 +1,19 @@
-.footer-container {
-  justify-content: flex-start;
-}
 .footer-container--size {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 1600px;
-  margin: auto;
+  width: 480px;
   color: $white-full;
   background-color: $black-light;
+
+  @media #{$tablet-lp} {
+    width: 768px;
+  }
+
+  @media #{$desktop-pt} {
+    width: 1600px;
+  }
+
+  @media #{$tablet-pt} {
+    margin: auto;
+  }
 }

@@ -1,5 +1,15 @@
 .portfolio-navigation--size {
-  max-width: 611px;
+  max-width: 450px;
   padding: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media #{$tablet-lp} {
+    margin-bottom: 14px;
+  }
+  @media #{$desktop-pt} {
+    margin-bottom: 50px;
+  }
+  @media #{$tablet-pt} {
+    max-width: 611px;
+  }
 }

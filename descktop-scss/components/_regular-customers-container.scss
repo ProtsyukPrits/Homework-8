@@ -1,6 +1,9 @@
 .regular-customers-container {
-  flex-direction: column;
+  @media #{$tablet-pt} {
+    flex-direction: column;
+  }
 }
+
 .regular-customers-container__title {
   margin: 0px;
   @include bottom-line();
