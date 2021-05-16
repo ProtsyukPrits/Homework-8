@@ -62,6 +62,7 @@
   height: 50px;
   padding: 0;
   padding: 10px 62px 10px 29px;
+  margin-left: 12px;
 
   align-items: center;
   text-align: center;
@@ -82,5 +83,10 @@
 .subscribe-area__icon {
   position: absolute;
   bottom: 14px;
-  right: 155px;
+  right: 150px;
+
+  @media #{$desktop-pt} {
+    bottom: 13px;
+    right: 28px;
+  }
 }

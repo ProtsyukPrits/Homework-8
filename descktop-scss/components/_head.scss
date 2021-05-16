@@ -25,11 +25,13 @@
   }
 
   @media #{$desktop-pt} {
-    max-width: 1600px;
+    width: 1600px;
     height: 600px;
     padding: 0px;
     padding-top: 195px;
     padding-bottom: 205px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media #{$mobile-lp} {

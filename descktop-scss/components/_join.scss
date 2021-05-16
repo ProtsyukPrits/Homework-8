@@ -6,6 +6,11 @@
   @media #{$desktop-pt} {
     margin-left: 70px;
   }
+
+  @media #{$tablet-max} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .join__title {

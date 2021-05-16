@@ -1,15 +1,18 @@
 .regular-customers {
   @include direction();
+
+  @media #{$tablet-max} {
+    display: flex;
+    flex-flow: wrap;
+  }
 }
 .regular-customers--size {
-  display: inline-block;
-
   @include margined();
 }
 .regular-customers__link {
-  display: inline-flex;
-  flex-direction: row;
+  display: flex;
   justify-content: center;
+
   align-items: center;
   padding: 0px;
   margin: 0px;
@@ -22,14 +25,26 @@
   background-color: $white-full;
   border: 1px solid $grey-medium;
   border-radius: 4px;
+
+  @media #{$desktop-pt} {
+    width: 170px;
+  }
 }
 
-.regular-customers .regular-customers__link:nth-child(2n + 1) {
-  margin-right: 25px;
+@media #{$tablet-max} {
+  .regular-customers .regular-customers__link:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+
+  .regular-customers .regular-customers__link:nth-child(n + 3) {
+    margin-top: 30px;
+  }
 }
 
-.regular-customers .regular-customers__link:nth-child(n + 3) {
-  margin-top: 30px;
+@media #{$desktop-pt} {
+  .regular-customers .regular-customers__link:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .regular-customers__link:hover {

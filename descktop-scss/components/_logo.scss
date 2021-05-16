@@ -1,3 +1,11 @@
+.logo-section {
+  @media #{$tablet-max} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .logo {
   text-decoration: none;
 }
@@ -32,4 +40,25 @@
   font-size: 26px;
   line-height: 31px;
   color: $white-full;
+}
+
+// Оформлення для модольного меню
+.logo-section__button {
+  border: none;
+  @include margined();
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  background-color: $white-full;
+
+  @media #{$tablet-pt} {
+    display: none;
+  }
+}
+.logo-section__button:hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $blue-light;
+}
+.logo-section__icon {
+  fill: currentColor;
 }

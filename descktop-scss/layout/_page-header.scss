@@ -1,34 +1,16 @@
 .page-header {
+  position: relative;
   align-items: center;
+
+  @media #{$tablet-max} {
+    position: relative;
+  }
 }
+
 .page-header--padding {
   padding: 0;
 }
 .page-header--bottom-line {
   max-width: none;
   border-bottom: 1px solid #ececec;
-}
-.page-header--container {
-  padding: 0px 15px;
-
-  @media #{$tablet-pt} {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  @media #{$desktop-pt} {
-    max-width: 1200px;
-  }
-
-  @media #{$tablet-lp} {
-    max-width: 768px;
-  }
-
-  @media #{$mobile-pt} {
-    width: 100%;
-  }
-
-  @media #{$mobile-lp} {
-    max-width: 480px;
-  }
 }

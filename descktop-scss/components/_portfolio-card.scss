@@ -8,6 +8,10 @@
 }
 .portfolio-card__list {
   width: 450px;
+
+  @media #{$desktop-pt} {
+    width: 370px;
+  }
 }
 .portfolio-card__list--transition:hover {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

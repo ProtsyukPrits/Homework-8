@@ -28,7 +28,7 @@
     padding: 25px 142px;
   }
 
-  @media (max-width: 479px) {
+  @media #{$mobile-pt} {
     width: 100%;
   }
 

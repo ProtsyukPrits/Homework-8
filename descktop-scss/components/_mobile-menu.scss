@@ -1,0 +1,126 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: $white-full;
+  z-index: 4;
+
+  transform: translateX(-100%);
+}
+
+.mobile-menu--container {
+  padding: 48px 15px 48px 40px;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu__button {
+  position: absolute;
+  top: 21px;
+  right: 25.33px;
+
+  border: none;
+  @include margined();
+
+  background-color: $white-full;
+}
+.mobile-menu__button:hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $blue-light;
+}
+.mobile-menu__icon {
+  fill: currentColor;
+}
+
+// Навигация modal
+.mobile-menu-navigation {
+  list-style: none;
+  @include margined();
+}
+
+.mobile-menu-navigation__font {
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-medium;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: $letter-spacing-0_02em;
+
+  text-align: center;
+  text-decoration: none;
+  color: $black-medium;
+}
+
+.mobile-menu-navigation__font:hover {
+  color: $blue-light;
+}
+
+.mobile-menu-navigation .mobile-menu-navigation__list:not(:first-child) {
+  margin-top: 32px;
+}
+
+// Контакти modal
+.mobile-menu-contacts {
+  @include margined();
+  margin-top: 306px;
+  margin-bottom: 64px;
+}
+.mobile-menu-contacts__list {
+  list-style: none;
+}
+
+.mobile-menu-contacts .mobile-menu-contacts__list:not(:first-child) {
+  margin-top: 32px;
+}
+.mobile-menu-contacts__font--mail {
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-medium;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: $letter-spacing-0_02em;
+
+  text-decoration: none;
+  color: $grey-dark;
+}
+.mobile-menu-contacts__font--tel {
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-medium;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: $letter-spacing-0_02em;
+
+  text-decoration: none;
+  color: $blue-light;
+}
+
+// Соціальні мережі modal
+.mobile-menu-link {
+  @include margined();
+  display: flex;
+}
+
+.mobile-menu-link__list {
+  list-style: none;
+}
+
+.mobile-menu-link__font {
+  font-family: $font-family-roboto;
+  font-style: normal;
+  font-weight: $font-weight-medium;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: $letter-spacing-0_02em;
+
+  text-decoration: none;
+  color: $blue-light;
+}
+.mobile-menu-link .mobile-menu-link__list:not(:first-child) {
+  margin-left: 20px;
+}

@@ -18,19 +18,16 @@
     <!--Шапка страницы-->
     <!--Навигация страниц-->
 
-    <header class="page-header page-header--bottom-line page-header--padding page-header--container">
+    <header class="page-header page-header--bottom-line page-header--padding">
     
-    
+    <div class="logo-section container">
         <a class="logo" href="/">
             <span class="logo__item--blue">Web</span> <span class="logo__item--black">Studio</span>
         </a>
-    
-    
-    
         <ul class="navigation navigation--size">
-            <li><a href="index.html"
-                    class="navigation__list navigation__list--position">Студия</a></li>
-            <li><a href="second page.html" class="navigation__list navigation__list--position navigation__list--underscore">Портфолио</a></li>
+            <li><a href="index.html" class="navigation__list navigation__list--position">Студия</a></li>
+            <li><a href="second page.html"
+                    class="navigation__list navigation__list--position navigation__list--underscore">Портфолио</a></li>
             <li><a href="Контакты" class="navigation__list navigation__list--position">Контакты</a></li>
         </ul>
     
@@ -51,6 +48,58 @@
                     +38 096 111 11 11</a>
             </li>
         </ul>
+    
+        <button type="button" class="logo-section__button js-open-menu is-open" aria-expanded="false"
+            aria-controls="mobile-menu">
+            <svg width="24" height="16" aria-label="Переключатель мобільного меню">
+                <use class="logo-section__icon" href="/images/icons.svg#mobile-menu"></use>
+            </svg>
+        </button>
+    </div>
+
+
+
+    <div class=" mobile-menu mobile-menu--container js-menu-container" id="mobile-menu">
+        <button type="button" class="mobile-menu__button js-close-menu">
+            <svg width="18.67" height="18.67">
+                <use class="mobile-menu__icon" href="/images/icons.svg#vector"></use>
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu-navigation ">
+            <li class="mobile-menu-navigation__list"><a href="index.html" class="mobile-menu-navigation__font">Студия</a>
+            </li>
+            <li class="mobile-menu-navigation__list"><a href="second page.html"
+                    class="mobile-menu-navigation__font">Портфолио</a></li>
+            <li class="mobile-menu-navigation__list"><a href="Контакты" class="mobile-menu-navigation__font">Контакты</a>
+            </li>
+        </ul>
+    
+        <ul class="mobile-menu-contacts ">
+            <li class="mobile-menu-contacts__list">
+                <a href="tel:+38 096 111 11 11" class="mobile-menu-contacts__font--tel">
+                    +38 096 111 11 11</a>
+            </li>
+    
+            <li class="mobile-menu-contacts__list">
+                <a href="mailto:info@devstudio.com" class="mobile-menu-contacts__font--mail">
+                    info@devstudio.com</a>
+            </li>
+    
+        </ul>
+    
+        <ul class="mobile-menu-link">
+            <li class="mobile-menu-link__list"><a href="https://www.instagram.com/"
+                    class="mobile-menu-link__font">Instagram</a></li>
+            <li class="mobile-menu-link__list"><a href="https://www.twitter.com/" class="mobile-menu-link__font">Twitter</a>
+            </li>
+            <li class="mobile-menu-link__list"><a href="https://www.facebook.com/"
+                    class="mobile-menu-link__font">Facebook</a></li>
+            <li class="mobile-menu-link__list"><a href="https://www.linkedin.com/"
+                    class="mobile-menu-link__font">LinkedIn</a></li>
+        </ul>
+    
+    </div>
     
     
     
@@ -220,7 +269,7 @@
             </ul>
         </div>
 
-        <section class="join section join--margins">
+        <section class="join join--margins">
             <h4 class="join__title">ПРИСОЕДИНЯЙТЕСЬ</h4>
             <div class="join-information join-information--margins">
 
@@ -261,6 +310,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./js/mobile-menu.js"></script>
 </footer>
     
     </body>

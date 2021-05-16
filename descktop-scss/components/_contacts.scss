@@ -1,6 +1,10 @@
 .contacts {
   list-style: none;
   @include direction();
+
+  @media #{$tablet-max} {
+    display: none;
+  }
 }
 
 .contacts--size {
