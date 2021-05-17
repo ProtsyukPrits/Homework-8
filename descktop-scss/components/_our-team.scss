@@ -1,5 +1,9 @@
 .our-team {
   @include direction();
+
+  @media #{$tablet-lp} {
+    flex-wrap: wrap;
+  }
 }
 
 .our-team--margins {

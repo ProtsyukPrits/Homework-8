@@ -5,8 +5,11 @@
 
   @media #{$desktop-pt} {
     flex-direction: column;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
+
 .our-work__title {
   @media #{$desktop-max} {
     display: none;

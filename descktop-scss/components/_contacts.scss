@@ -1,6 +1,10 @@
 .contacts {
   list-style: none;
-  @include direction();
+  @media #{$desktop-pt} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   @media #{$tablet-max} {
     display: none;
@@ -61,5 +65,11 @@
 .contacts .contacts__list:not(:last-child) {
   @media #{$desktop-pt} {
     margin-right: 30px;
+  }
+}
+
+.contacts .contacts__list:not(:last-child) {
+  @media #{$tablet-lp} {
+    margin-bottom: 10px;
   }
 }

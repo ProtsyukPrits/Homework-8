@@ -1,6 +1,10 @@
 .benefits {
   list-style: none;
   @include direction();
+
+  @media #{$tablet-lp} {
+    flex-flow: wrap;
+  }
 }
 
 .benefits--container {
@@ -9,10 +13,13 @@
   }
 
   @media #{$tablet-lp} {
+    margin: 0;
     margin-top: 60px;
   }
 }
-
+.benefits__list {
+  width: 354px;
+}
 .benefits__icon {
   height: 120px;
   background-color: $grey-light;
@@ -24,7 +31,7 @@
   }
 
   @media #{$tablet-lp} {
-    width: 270px;
+    width: 354px;
     padding: 25px 142px;
   }
 
@@ -74,6 +81,12 @@
 
 .benefits .benefits__list:not(:first-child) {
   @media #{$mobile-lp} {
+    margin-top: 30px;
+  }
+}
+
+.benefits .benefits__list:nth-child(n + 3) {
+  @media #{$tablet-lp} {
     margin-top: 30px;
   }
 }

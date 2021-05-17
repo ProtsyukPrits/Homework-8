@@ -269,18 +269,16 @@ summary {
   display: list-item;
 }
 
-@media screen and (max-width: 767px) {
-  .logo-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.logo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -357,7 +355,7 @@ summary {
 .contacts {
   list-style: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .contacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -445,6 +443,12 @@ summary {
 @media screen and (min-width: 1200px) {
   .contacts .contacts__list:not(:last-child) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts .contacts__list:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -562,6 +566,12 @@ summary {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .benefits--container {
@@ -570,8 +580,13 @@ summary {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits--container {
+    margin: 0;
     margin-top: 60px;
   }
+}
+
+.benefits__list {
+  width: 354px;
 }
 
 .benefits__icon {
@@ -587,7 +602,7 @@ summary {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits__icon {
-    width: 270px;
+    width: 354px;
     padding: 25px 142px;
   }
 }
@@ -640,6 +655,12 @@ summary {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits .benefits__list:nth-child(n+3) {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .our-work {
     display: none;
@@ -651,6 +672,8 @@ summary {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
 
@@ -826,6 +849,12 @@ summary {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .our-team--margins {
   margin: 0;
@@ -861,20 +890,13 @@ summary {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .our-team-information {
-    width: 354px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .our-team-information {
-    width: 270px;
     padding-bottom: 30px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .our-team-information {
-    width: 450px;
     padding-bottom: 24px;
   }
 }
@@ -1012,7 +1034,7 @@ summary {
             justify-content: space-between;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .regular-customers {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1062,8 +1084,9 @@ summary {
   .regular-customers .regular-customers__link:nth-child(2n+1) {
     margin-right: 30px;
   }
-
-  .regular-customers .regular-customers__link:nth-child(n+3) {
+}
+@media screen and (max-width: 1199px) {
+  .regular-customers .regular-customers__link:nth-child(n+4) {
     margin-top: 30px;
   }
 }
@@ -1109,7 +1132,7 @@ summary {
 .address-contacts {
   list-style: none;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .address-contacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1172,7 +1195,7 @@ summary {
 .join {
   list-style: none;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .join {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2288,7 +2311,8 @@ summary {
 }
 
 .container {
-  padding: 0px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -2300,8 +2324,6 @@ summary {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2324,7 +2346,7 @@ summary {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;

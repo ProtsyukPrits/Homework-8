@@ -2,8 +2,18 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media (min-width: 1200px) {
+  @media #{$desktop-pt} {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
+
+//  @media #{$mobile-pt} 479px
+//  @media #{$mobile-lp} 480-767px
+
+//  @media #{$tablet-max} 767px
+//  @media #{$tablet-pt} 768px
+//  @media #{$tablet-lp} 768-1199px
+
+//  @media #{$desktop-max} 1199px
+//  @media #{$desktop-pt} 1200px

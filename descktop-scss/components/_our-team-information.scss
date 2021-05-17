@@ -1,15 +1,9 @@
 .our-team-information {
-  @media #{$tablet-lp} {
-    width: 354px;
-  }
-
   @media #{$desktop-pt} {
-    width: 270px;
     padding-bottom: 30px;
   }
 
-  @media #{$tablet-max} {
-    width: 450px;
+  @media #{$desktop-max} {
     padding-bottom: 24px;
   }
 }
