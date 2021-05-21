@@ -181,18 +181,63 @@
 
             <h2 class="our-work__title">Чем мы занимаемся</h2>
             <ul class="our-work-photos our-work-photos--size">
-                <li class="our-work-photos__list"><img src="images/img1-min.png" width="370px" alt="Человек наберает код">
+                <li class="our-work-photos__list">
+                <picture>
+                    <source srcset="
+                                                ./images/desktop/img2-1200.webp" 
+                                                media="#{$desktop-max}" 
+                                                type="image/webp" />
+                    <source srcset="
+                                                ./images/desktop/img2-1200@2x.webp" 
+                                                media="#{$desktop-max}" 
+                                                type="image/webp" />
+                    <img srcset="
+                                            ./images/desktop/img2-1200.jpg 1x,
+                                            ./images/desktop/img2-1200@2x.jpg 2x
+                                            " src="images/desktop/img2-1200.jpg" 
+                                            alt="Человек наберает код">
+                </picture>
                     <div class="our-work-information">
                         <p class="our-work-information__text">Десктопные приложения</p>
                     </div>
                 </li>
                 
-                <li class="our-work-photos__list"><img src="images/img2-min.png" width="370px" alt="Держит в руках телефон">
+                <li class="our-work-photos__list">
+                    <picture>
+                        <source srcset="
+                                            ./images/desktop/img3-1200.webp" 
+                                            media="#{$desktop-max}" 
+                                             type="image/webp" />
+                        <source srcset="
+                                            ./images/desktop/img3-1200@2x.webp" 
+                                            media="#{$desktop-max}" 
+                                            type="image/webp" />
+                        <img srcset="
+                                            ./images/desktop/img3-1200.jpg 1x,
+                                            ./images/desktop/img3-1200@2x.jpg 2x
+                                            " src="images/desktop/img3-1200.jpg" 
+                                            alt="Держит в руках телефон">
+                    </picture>
                     <div class="our-work-information">
                         <p class="our-work-information__text">Мобильные приложения</p>
                     </div>
                 </li>
-                <li class="our-work-photos__list"><img src="images/img3-min.png" width="370px" alt="Выбирает на планшете градиент">
+                <li class="our-work-photos__list">
+                    <picture>
+                        <source srcset="
+                                            ./images/desktop/img4-1200.webp" 
+                                            media="#{$desktop-max}"
+                                             type="image/webp" />
+                        <source srcset="
+                                            ./images/desktop/img4-1200@2x.webp" 
+                                            media="#{$desktop-max}"
+                                            type="image/webp" />
+                        <img srcset="
+                                            ./images/desktop/img4-1200.jpg 1x,
+                                            ./images/desktop/img4-1200@2x.jpg 2x" 
+                                        src="images/desktop/img4-1200.jpg" 
+                                       alt="Выбирает на планшете градиент">
+                    </picture>
                     <div class="our-work-information">
                         <p class="our-work-information__text">Дизайнерские решения</p>
                     </div>
@@ -210,7 +255,43 @@
             <div class="our-team our-team--margins">
 
                     <div class="our-team-information our-team-information--shadow">
-                            <img class="our-team-information__photo" src="images/img1.jpg" width="270px" alt="фото Игорь Демьяненко">
+                           <picture>
+                                <source 
+                                        srcset="
+                                                ./images/mobile/img5-480.webp 1x,
+                                                ./images/mobile/img5-480@2x.webp 2x"
+                                        type="image/webp"/>
+                                        
+                                <source 
+                                        srcset="
+                                                ./images/tablet/img5-768.webp 1x,
+                                                ./images/tablet/img5-768@2x.webp 2x"
+                                       media="(min-width: 768px)"
+                                        type="image/webp"/>
+                                <source 
+                                        srcset="
+                                                ./images/desktop/img5-1200.webp 1x,
+                                                ./images/desktop/img5-1200@2x.webp 2x" 
+                                       
+                                        type="image/webp"/>
+
+                                <img 
+                                        class="our-team-information__photo" 
+                                       
+                                        src="./images/mobile/img5-480.jpg" 
+                                        alt="фото Игорь Демьяненко"
+                                        srcset="
+                                        
+                                        ./images/mobile/img5-480.jpg 1x,
+                                        ./images/tablet/img5-768.jpg 1x,
+                                        ./images/desktop/img5-1200.jpg 1x,
+                                        ./images/mobile/img5-480@2x.jpg 2x,
+                                        ./images/tablet/img5-768@2x.jpg 2x,
+                                        ./images/desktop/img5-1200@2x.jpg 2x"
+                                        >
+                                        
+                           </picture>
+
                             <h3 class="our-team-information__title">Игорь Демьяненко</h3>
                             <p class="our-team-information__text">Product Designer</p>
                         <div class="our-team-social-information">
