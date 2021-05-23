@@ -21,4 +21,7 @@
   @media #{$desktop-pt} {
     max-width: 1200px;
   }
+  @media #{$tablet-pt} {
+    margin: auto;
+  }
 }

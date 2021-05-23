@@ -3,14 +3,17 @@
   padding: 0px;
   margin-bottom: 40px;
 
+  @media #{$tablet-max} {
+    padding-left: 15px;
+  }
   @media #{$tablet-lp} {
     margin: auto;
     max-width: 611px;
     margin-bottom: 20px;
   }
   @media #{$desktop-pt} {
-    margin: auto;
     max-width: 611px;
+    margin: auto;
     margin-bottom: 50px;
   }
 }

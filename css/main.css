@@ -467,6 +467,8 @@ summary {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .head {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/tablet/img1-768.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tablet/img1-768.jpg);
@@ -690,8 +692,7 @@ summary {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1141,6 +1142,7 @@ summary {
     padding-left: 76px;
     padding-right: 89px;
     padding-bottom: 0px;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1874,6 +1876,11 @@ summary {
   padding: 0px;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 767px) {
+  .portfolio-navigation--size {
+    padding-left: 15px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-navigation--size {
     margin: auto;
@@ -1883,8 +1890,8 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .portfolio-navigation--size {
-    margin: auto;
     max-width: 611px;
+    margin: auto;
     margin-bottom: 50px;
   }
 }
@@ -2331,7 +2338,7 @@ summary {
   }
 }
 
-.navigation__list {
+.navigation__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2345,7 +2352,7 @@ summary {
   text-decoration: none;
 }
 
-.navigation__list:hover {
+.navigation__link:hover {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196f3;
@@ -2369,20 +2376,25 @@ summary {
   }
 }
 
-.navigation__list--position {
+.navigation__link--position {
   position: relative;
   padding-left: 0;
   padding-right: 0;
 }
 @media screen and (min-width: 768px) {
-  .navigation__list--position {
+  .navigation__link--position {
     display: block;
     padding: 32px 0 32px 0;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation .navigation__list:not(:first-child) {
+    margin-left: 50px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .navigation__list--underscore::after {
+  .navigation__link--underscore::after {
     position: absolute;
     content: "";
     display: block;
@@ -2423,6 +2435,11 @@ summary {
 @media screen and (min-width: 1200px) {
   .page-header--bottom-line {
     max-width: 1200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-header--bottom-line {
+    margin: auto;
   }
 }
 

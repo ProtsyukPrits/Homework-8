@@ -28,9 +28,9 @@
                 <span class="logo__item--blue">Web</span> <span class="logo__item--black">Studio</span>
             </a>
                 <ul class="navigation navigation--size">
-                    <li><a href="index.html" class="navigation__list navigation__list--position navigation__list--underscore">Студия</a></li>
-                    <li><a href="second page.html" class="navigation__list navigation__list--position">Портфолио</a></li>
-                    <li><a href="Контакты" class="navigation__list navigation__list--position">Контакты</a></li>
+                    <li class="navigation__list"><a href="index.html" class="navigation__link navigation__link--position navigation__link--underscore">Студия</a></li>
+                    <li class="navigation__list"><a href="second page.html" class="navigation__link navigation__link--position">Портфолио</a></li>
+                    <li class="navigation__list"><a href="Контакты" class="navigation__link navigation__link--position">Контакты</a></li>
                 </ul>
 
                 <ul class="contacts contacts--size">
@@ -128,7 +128,7 @@
         <!--Особенности-->
 
         
-            <ul class="benefits benefits--container container">
+            <ul class="benefits benefits--container container section">
                 <li class="benefits__list">
                     <svg class="benefits__icon" width="70px" height="70px">
                         <use href="./images/icons.svg#antenna"></use>
@@ -278,17 +278,22 @@
                                 <img 
                                         class="our-team-information__photo" 
                                        
-                                        src="./images/mobile/img5-480.jpg" 
-                                        alt="фото Игорь Демьяненко"
+                                        
                                         srcset="
                                         
                                         ./images/mobile/img5-480.jpg 1x,
+                                        ./images/mobile/img5-480@2x.jpg 2x"
+                                        
+                                        
+                                       srcset="
                                         ./images/tablet/img5-768.jpg 1x,
-                                        ./images/desktop/img5-1200.jpg 1x,
-                                        ./images/mobile/img5-480@2x.jpg 2x,
-                                        ./images/tablet/img5-768@2x.jpg 2x,
-                                        ./images/desktop/img5-1200@2x.jpg 2x"
-                                       
+                                        ./images/tablet/img5-768@2x.jpg 2x"
+
+                                         srcset="
+                                         ./images/desktop/img5-1200.jpg 1x,
+                                         ./images/desktop/img5-1200@2x.jpg 2x"
+src="./images/mobile/img5-480.jpg" 
+                                        alt="фото Игорь Демьяненко"
                                         />
                                         
                            </picture>
