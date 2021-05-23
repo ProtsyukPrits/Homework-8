@@ -9,6 +9,10 @@
 .portfolio-card__list {
   width: 450px;
 
+  @media #{$tablet-lp} {
+    width: 354px;
+  }
+
   @media #{$desktop-pt} {
     width: 370px;
   }
@@ -24,6 +28,10 @@
   @media #{$tablet-max} {
     width: 450px;
   }
+
+  @media #{$tablet-lp} {
+    width: 354px;
+  }
 }
 @media #{$desktop-pt} {
   .portfolio-card .portfolio-card__list:nth-child(3n) {
@@ -37,7 +45,7 @@
   }
 }
 
-@media #{$tablet-max} {
+@media #{$desktop-max} {
   .portfolio-card .portfolio-card__list:not(:last-child) {
     margin-bottom: 30px;
   }

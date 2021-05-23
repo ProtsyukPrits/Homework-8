@@ -9,7 +9,7 @@
 }
 
 .logo--footer {
-  @media #{$tablet-max} {
+  @media #{$desktop-max} {
     display: flex;
     justify-content: center;
   }

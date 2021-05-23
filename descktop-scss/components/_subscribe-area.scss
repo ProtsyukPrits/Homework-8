@@ -3,7 +3,7 @@
 
   display: flex;
 
-  @media #{$tablet-max} {
+  @media #{$desktop-max} {
     flex-direction: column;
     align-items: center;
   }
@@ -62,7 +62,6 @@
   height: 50px;
   padding: 0;
   padding: 10px 62px 10px 29px;
-  margin-left: 12px;
 
   align-items: center;
   text-align: center;
@@ -78,6 +77,10 @@
   font-size: 16px;
   line-height: 30px;
   letter-spacing: $letter-spacing-0_06em;
+
+  @media #{$desktop-pt} {
+    margin-left: 12px;
+  }
 }
 
 .subscribe-area__icon {

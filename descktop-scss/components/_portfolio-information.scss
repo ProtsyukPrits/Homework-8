@@ -3,10 +3,26 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
+
+.portfolio-information--padding-tablet {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  margin: 0;
+
+  @media #{$tablet-lp} {
+    padding-bottom: 56px;
+  }
+}
 .portfolio-information--padding {
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
   margin: 0;
 }
+
 .portfolio-information__title {
   margin: 0px;
 

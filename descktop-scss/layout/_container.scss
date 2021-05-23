@@ -8,16 +8,17 @@
     margin-right: auto;
   }
 
-  @media #{$tablet-lp} {
-    max-width: 768px;
-  }
-
   @media #{$tablet-pt} {
+    margin: auto;
     display: flex;
     justify-content: space-between;
   }
+
   @media #{$tablet-max} {
     width: 480px;
+  }
+  @media #{$tablet-lp} {
+    width: 768px;
   }
 }
 

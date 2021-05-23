@@ -35,6 +35,10 @@
   .regular-customers .regular-customers__link:nth-child(2n + 1) {
     margin-right: 30px;
   }
+
+  .regular-customers .regular-customers__link:nth-child(n + 3) {
+    margin-top: 30px;
+  }
 }
 
 @media #{$desktop-max} {

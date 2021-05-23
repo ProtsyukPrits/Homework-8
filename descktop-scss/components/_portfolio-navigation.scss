@@ -4,12 +4,13 @@
   margin-bottom: 40px;
 
   @media #{$tablet-lp} {
-    margin-bottom: 14px;
+    margin: auto;
+    max-width: 611px;
+    margin-bottom: 20px;
   }
   @media #{$desktop-pt} {
-    margin-bottom: 50px;
-  }
-  @media #{$tablet-pt} {
+    margin: auto;
     max-width: 611px;
+    margin-bottom: 50px;
   }
 }

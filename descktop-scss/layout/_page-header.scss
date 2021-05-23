@@ -11,6 +11,14 @@
   padding: 0;
 }
 .page-header--bottom-line {
-  max-width: none;
+  max-width: 480px;
   border-bottom: 1px solid #ececec;
+
+  @media #{$tablet-lp} {
+    max-width: 768px;
+  }
+
+  @media #{$desktop-pt} {
+    max-width: 1200px;
+  }
 }

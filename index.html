@@ -29,8 +29,7 @@
             </a>
                 <ul class="navigation navigation--size">
                     <li><a href="index.html" class="navigation__list navigation__list--position navigation__list--underscore">Студия</a></li>
-                    <li><a href="second page.html"
-                            class="navigation__list navigation__list--position">Портфолио</a></li>
+                    <li><a href="second page.html" class="navigation__list navigation__list--position">Портфолио</a></li>
                     <li><a href="Контакты" class="navigation__list navigation__list--position">Контакты</a></li>
                 </ul>
 
@@ -256,24 +255,25 @@
 
                     <div class="our-team-information our-team-information--shadow">
                            <picture>
-                                <source 
+                                <!-- <source 
                                         srcset="
                                                 ./images/mobile/img5-480.webp 1x,
                                                 ./images/mobile/img5-480@2x.webp 2x"
+                                                media="(max-width: 767px)"
                                         type="image/webp"/>
                                         
                                 <source 
                                         srcset="
                                                 ./images/tablet/img5-768.webp 1x,
                                                 ./images/tablet/img5-768@2x.webp 2x"
-                                       media="(min-width: 768px)"
+                                       media="(min-width: 768px) and (max-width: 1199px)"
                                         type="image/webp"/>
                                 <source 
                                         srcset="
                                                 ./images/desktop/img5-1200.webp 1x,
                                                 ./images/desktop/img5-1200@2x.webp 2x" 
-                                       
-                                        type="image/webp"/>
+                                       media="(min-width: 1200px)"
+                                        type="image/webp"/> -->
 
                                 <img 
                                         class="our-team-information__photo" 
@@ -288,7 +288,8 @@
                                         ./images/mobile/img5-480@2x.jpg 2x,
                                         ./images/tablet/img5-768@2x.jpg 2x,
                                         ./images/desktop/img5-1200@2x.jpg 2x"
-                                        >
+                                       
+                                        />
                                         
                            </picture>
 
@@ -479,60 +480,65 @@
     <!--Футер-->
 
     <footer class="footer-container footer-container--size">
-
-        <div class="footer-information footer-information--paddings container">
-               <div>
-                        <a class="logo logo--footer" href="/">
-                        <span class="logo__item--blue">Web</span> <span class="logo__item--white">Studio</span></a>
-                    
-                        <ul class="address-contacts address-contacts--margins">
-                            <li class="address-contacts__list address-contacts__list--font-address"> г. Киев, пр-т Леси Украинки, 26 </li>
-                            <li class="address-contacts__list"><a href="mailto:info@example.com" class="address-contacts__list--font-contact">info@example.com</a></li>
-                            <li class="address-contacts__list"> <a href="tel:+38 099 111 11 11" class="address-contacts__list--font-contact">+38 099 111 11 11</a></li>
-                        </ul>
-                </div>
-
-                <section class="join join--margins ">
-                        <h4 class="join__title">ПРИСОЕДИНЯЙТЕСЬ</h4>
-                    <div class="join-information join-information--margins">
-                        
-                            <a class="join-information__link" href="https://www.instagram.com/">
-                                <svg class="join-information__icon" width="20px" height="20px">
-                                    <use href="./images/icons.svg#instagram"></use>
-                                </svg>
-                            </a>
-                     
-                            <a class="join-information__link" href="https://www.twitter.com/">
-                                <svg class="join-information__icon" width="20px" height="20px">
-                                    <use href="./images/icons.svg#twitter"></use>
-                                </svg>
-                           </a>
-                     
-                           <a class="join-information__link" href="https://www.facebook.com/">
-                                <svg class="join-information__icon" width="20px" height="20px">
-                                    <use href="./images/icons.svg#facebook"></use>
-                                </svg>
-                           </a>
-                     
-                           <a class="join-information__link" href="https://www.linkedin.com/">
-                                <svg class="join-information__icon" width="20px" height="20px">
-                                    <use href="./images/icons.svg#linkedin"></use>
-                                </svg>
-                           </a>
-                      
-                    </div>
-                </section>
-                <div class="subscribe">
-                    <h4 class="subscribe__title">Подпишитесь на рассылку</h4>
-                    <div class="subscribe-area subscribe-area--padding">
-                        <input class="subscribe-area__input" type="email" placeholder="E-mail">
-                        <button class="subscribe-area__button" type="submit">Подписаться</button>
-                        <svg class="subscribe-area__icon" width="24px" height="24px">
-                            <use href="./images/icons.svg#send"></use>
+    
+        <div class="footer-container--tablet ">
+            <div>
+                <a class="logo logo--footer" href="/">
+                    <span class="logo__item--blue">Web</span> <span class="logo__item--white">Studio</span></a>
+    
+                <ul class="address-contacts address-contacts--margins">
+                    <li class="address-contacts__list address-contacts__list--font-address"> г. Киев, пр-т Леси Украинки, 26
+                    </li>
+                    <li class="address-contacts__list"><a href="mailto:info@example.com"
+                            class="address-contacts__list--font-contact">info@example.com</a></li>
+                    <li class="address-contacts__list"> <a href="tel:+38 099 111 11 11"
+                            class="address-contacts__list--font-contact">+38 099 111 11 11</a></li>
+                </ul>
+            </div>
+    
+            <section class="join join--margins">
+                <h4 class="join__title">ПРИСОЕДИНЯЙТЕСЬ</h4>
+                <div class="join-information join-information--margins">
+    
+                    <a class="join-information__link" href="https://www.instagram.com/">
+                        <svg class="join-information__icon" width="20px" height="20px">
+                            <use href="./images/icons.svg#instagram"></use>
                         </svg>
-                    </div>
+                    </a>
+    
+                    <a class="join-information__link" href="https://www.twitter.com/">
+                        <svg class="join-information__icon" width="20px" height="20px">
+                            <use href="./images/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+    
+                    <a class="join-information__link" href="https://www.facebook.com/">
+                        <svg class="join-information__icon" width="20px" height="20px">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+    
+                    <a class="join-information__link" href="https://www.linkedin.com/">
+                        <svg class="join-information__icon" width="20px" height="20px">
+                            <use href="./images/icons.svg#linkedin"></use>
+                        </svg>
+                    </a>
+    
                 </div>
+            </section>
+            <div class="subscribe">
+                <h4 class="subscribe__title">Подпишитесь на рассылку</h4>
+                <div class="subscribe-area subscribe-area--padding">
+                    <input class="subscribe-area__input" type="email" placeholder="E-mail">
+                    <button class="subscribe-area__button" type="submit">Подписаться</button>
+                    <svg class="subscribe-area__icon" width="24px" height="24px">
+                        <use href="./images/icons.svg#send"></use>
+                    </svg>
+                </div>
+            </div>
         </div>
+    
+    
     </footer>
 
     <div class="backdrop backdrop--is-hidden" data-modal>

@@ -7,9 +7,13 @@
 .check-box--size {
   margin-right: auto;
   margin-left: auto;
-  width: 423px;
+  width: 370px;
   padding-top: 10px;
   padding-bottom: 30px;
+
+  @media #{$desktop-pt} {
+    width: 425px;
+  }
 }
 .check-box__label {
   padding-left: 22px;
@@ -17,10 +21,15 @@
   font-family: $font-family-roboto;
   font-style: normal;
   font-weight: $font-weight-normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: $letter-spacing-0_03em;
   color: $grey-dark;
+
+  @media #{$desktop-pt} {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 .check-box__input {
   position: absolute;
@@ -46,12 +55,16 @@
 }
 .check-box__icon {
   position: absolute;
-  top: 22%;
+  top: 16%;
   left: 0;
   width: 16px;
   height: 15px;
   border: 2px solid $black-medium;
   border-radius: 2px;
+
+  @media #{$desktop-pt} {
+    top: 22%;
+  }
 }
 .check-box__text {
   color: $blue-light;

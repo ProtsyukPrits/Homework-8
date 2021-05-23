@@ -26,7 +26,7 @@
 }
 
 @mixin centered() {
-  @media #{$tablet-max} {
+  @media #{$desktop-max} {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -7,13 +7,34 @@
 
   @media #{$tablet-lp} {
     width: 768px;
+    padding-left: 76px;
+    padding-right: 89px;
+    padding-bottom: 0px;
   }
 
   @media #{$desktop-pt} {
     width: 1600px;
-  }
-
-  @media #{$tablet-pt} {
     margin: auto;
+  }
+}
+
+.footer-container--tablet {
+  @media #{$tablet-lp} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.footer-container--tablet {
+  @media #{$desktop-pt} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

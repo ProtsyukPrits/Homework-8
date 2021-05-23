@@ -2,6 +2,13 @@
   @media #{$desktop-pt} {
     margin-left: 93px;
   }
+  @media #{$tablet-lp} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .subscribe__title {
@@ -18,8 +25,5 @@
   @media #{$desktop-pt} {
     padding-top: 12px;
     text-align: start;
-  }
-  @media #{$tablet-lp} {
-    padding-top: 5px;
   }
 }
