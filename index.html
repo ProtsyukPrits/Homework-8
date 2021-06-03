@@ -13,6 +13,10 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css" />
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+    
+    <script type="text/javascript" 
+    src="./js/index.js"> </script>
 
 </head>
 
@@ -624,7 +628,7 @@ src="./images/mobile/img5-480.jpg"
             </svg>
         </button>
            
-           <form class="form form--padding" autocomplete="off">
+           <form class="form form--padding" autocomplete="off" method="POST">
                
                     <h1 class="form__title">Оставьте свои данные, мы вам перезвоним</h1>
 
@@ -686,7 +690,9 @@ src="./images/mobile/img5-480.jpg"
                         </div>
                    
                         <div class="form__button--display">
-                            <button class="form__button" type="submit">Отправить</button>
+                            <button class="form__button" 
+                                    type="button" 
+                                    onclick = "sendEmail ()">Отправить</button>
                         </div>
                   
                 
