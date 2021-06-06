@@ -13,10 +13,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css" />
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
-    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+   
     
-    <script type="text/javascript" 
-    src="./js/index.js"> </script>
+   
 
 </head>
 
@@ -622,13 +621,13 @@ src="./images/mobile/img5-480.jpg"
 
     <div class="backdrop backdrop--is-hidden" data-modal>
         <div class="modal">
-        <button class="modal__button" data-modal-close> 
-            <svg class="modal__icon" width="11px" height="11px">
-                <use href="./images/icons.svg#vector"></use>
-            </svg>
-        </button>
-           
-           <form class="form form--padding" autocomplete="off" method="POST">
+            <button class="modal__button" data-modal-close> 
+                <svg class="modal__icon" width="11px" height="11px">
+                    <use href="./images/icons.svg#vector"></use>
+                </svg>
+            </button>
+            
+           <form class="form form--padding" autocomplete="off" action="javascript:sendmail()" method="POST">
                
                     <h1 class="form__title">Оставьте свои данные, мы вам перезвоним</h1>
 
@@ -638,7 +637,7 @@ src="./images/mobile/img5-480.jpg"
                             class="form-information__input form-information__input--paddings" 
                             type="name"
                              id="name" 
-                             name="form" 
+                             name="name" 
                              value="" 
                              placeholder=" " />
                             <svg class="form-information__icon" width="18px" height="18px">
@@ -652,7 +651,7 @@ src="./images/mobile/img5-480.jpg"
                             class="form-information__input form-information__input--paddings" 
                             type="tel" 
                             id="tel"
-                            name="form" 
+                            name="tel" 
                             value="" 
                             placeholder=" " />
                         <svg class="form-information__icon" width="18px" height="18px">
@@ -665,8 +664,8 @@ src="./images/mobile/img5-480.jpg"
                         <input 
                             class="form-information__input form-information__input--paddings" 
                             type="email"
-                            id="mail" 
-                            name="form" 
+                            id="email" 
+                            name="email" 
                             value="" 
                             placeholder=" " />
                         <svg class="form-information__icon" width="18px" height="18px">
@@ -676,7 +675,7 @@ src="./images/mobile/img5-480.jpg"
 
                     <div class="form-information ">
                         <label  class="form-information__label">Комментарий</label>
-                        <textarea class="form-information__input form-information__input--resize form-information__input--height" name="form" rows="" placeholder="Введите текст" ></textarea>
+                        <textarea class="form-information__input form-information__input--resize form-information__input--height" name="message" id="message" rows="" placeholder="Введите текст" ></textarea>
                     </div>
                         <div class="check-box check-box--size">
                             <label for="checkbox" class="check-box__label">
@@ -691,18 +690,89 @@ src="./images/mobile/img5-480.jpg"
                    
                         <div class="form__button--display">
                             <button class="form__button" 
-                                    type="button" 
-                                    onclick = "sendEmail ()">Отправить</button>
+                                    type="submit" >Отправить</button>
                         </div>
-                  
+                 
                 
                   
             </form>
         </div>
     </div>
-<script src="./js/modal.js"></script>
-<script src="./js/mobile-menu.js"></script>
+
+    <script src="./js/modal.js"> </script>
+    <script src="./js/mobile-menu.js"> </script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+<script>
+     function sendmail() {
+       Email.send({
+       
+             Host: "smtp.gmail.com",
+             Username: "demoivanovichdmytro@gmail.com",
+             Password: "password",
+             To: 'ivanovichdmytro@gmail.com',
+             From: "demoivanovichdmytro@gmail.com",
+             Subject: "This is the subject",
+             Body: "And this is the body"
+         }).then(
+             message => alert(message)
+         );
+        }
+</script>
+
+
+
+     <!-- <script>
+
+        function sendmail(){
+
+            var name = $('#name').val();
+            var tel = $('#tel').val();
+            var email = $('#email').val();
+            var message = $('#message').val();
+
+            // var body = $('#body').val();
+
+            var Body = 'name: ' + name + '<br>tel: ' + tel + '<br>email: ' + email + '<br>message: ' + message;
+            //console.log(name, phone, email, message);
+        
+            Email.send({
+                // Host: "smtp.gmail.com",
+                // Username: "demoivanovichdmytro11@gmail.com",
+                // Password: "password",
+                SecureToken:"56d8aa44-6112-4639-aa79-637f49a91ef8",
+                To: 'ivanovichdmytro@gmail.com',
+                From: "demoivanovichdmytro11@gmail.com",
+                Subject: "New message on contact from:" + name,
+                Body: Body
+            }).then(
+                message => {
+                    //console.log (message);
+                    if (message == 'OK') {
+                        alert('Your mail has been send. Thank you for connecting.');
+                    }
+                    else {
+                        console.error(message);
+                        alert('There is error at sending message.')
+
+                    }
+
+                }
+            );
+
+            }
+
+ </script>  -->
+
+
+
+
 
 </body>
+
 
 </html>
