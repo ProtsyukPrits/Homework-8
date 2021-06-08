@@ -11,7 +11,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/tablet/img1-768.jpg");
+    url("/images/mobile/img1-480.jpg");
   background-size: 480px 400px;
 
   border: 1px solid #000000;
@@ -26,7 +26,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/tablet/img1-768.jpg);
+      url("/images/tablet/img1-768.jpg");
     background-size: 768px 400px;
     // X2-photo for 768
     @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
@@ -35,7 +35,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(./images/tablet/img1-768@2x.jpg);
+        url("/images/tablet/img1-768@2x.jpg");
     }
   }
 
@@ -52,7 +52,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./images/desktop/img1-1200.jpg);
+      url("/images/desktop/img1-1200.jpg");
     background-size: 1600px 600px;
     // X2-photo for 1200
     @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
@@ -61,7 +61,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(./images/desktop/img1-1200@2x.jpg);
+        url("/images/desktop/img1-1200@2x.jpg");
     }
   }
 
@@ -74,7 +74,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(./images/mobile/img1-480@2x.jpg);
+        url("/images/mobile/img1-480@2x.jpg");
       background-size: 480px 400px;
     }
   }
