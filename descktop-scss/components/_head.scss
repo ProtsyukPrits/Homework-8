@@ -26,7 +26,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/tablet/img1-768.jpg");
+      url("/Homework-8/images/tablet/img1-768.webp");
     background-size: 768px 400px;
     // X2-photo for 768
     @media screen and (min-device-pixel-ratio: 2),
@@ -37,7 +37,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/tablet/img1-768@2x.jpg");
+        url("/Homework-8/images/tablet/img1-768@2x.webp");
     }
   }
 
@@ -54,7 +54,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/desktop/img1-1200.jpg");
+      url("/Homework-8/images/desktop/img1-1200.webp");
     background-size: 1600px 600px;
     // X2-photo for 1200
     @media screen and (min-device-pixel-ratio: 2),
@@ -65,7 +65,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/desktop/img1-1200@2x.jpg");
+        url("/Homework-8/images/desktop/img1-1200@2x.webp");
     }
   }
 
@@ -80,7 +80,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/mobile/img1-480@2x.jpg");
+        url("/Homework-8/images/mobile/img1-480@2x.webp");
       background-size: 480px 400px;
     }
   }
