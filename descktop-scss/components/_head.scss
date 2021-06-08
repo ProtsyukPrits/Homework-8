@@ -11,7 +11,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./images/mobile/img1-480.jpg);
+    url("/images/tablet/img1-768.jpg");
   background-size: 480px 400px;
 
   border: 1px solid #000000;
@@ -26,7 +26,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./images/tablet/img1-768.jpg);
+      url(/images/tablet/img1-768.jpg);
     background-size: 768px 400px;
     // X2-photo for 768
     @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
