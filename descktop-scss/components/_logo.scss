@@ -46,7 +46,7 @@
   @include margined();
   margin-top: 10px;
   margin-bottom: 10px;
-
+  color: $black-dark;
   background-color: $white-full;
 
   @media #{$tablet-pt} {
